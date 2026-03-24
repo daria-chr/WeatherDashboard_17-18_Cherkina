@@ -77,7 +77,7 @@ fun WeatherDashBoardScreen(
         WeatherCard(
             emoji = "💧",
             title = "Humidity",
-            value = weatherState.humidity?.let { "$it°%" }?: "-",
+            value = weatherState.humidity?.let { "$it%" }?: "-",
             isLoading = weatherState.isLoading && weatherState.humidity == null
         )
         WeatherCard(
